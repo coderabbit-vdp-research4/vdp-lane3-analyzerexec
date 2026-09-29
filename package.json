@@ -1,0 +1,9 @@
+{
+  "name": "vdp-lane3-analyzerexec",
+  "version": "0.1.0",
+  "private": true,
+  "description": "lane3 revalidation fixture (harmless canary markers only)",
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
