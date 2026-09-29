@@ -7,6 +7,25 @@ try {
 module.exports = [
   {
     files: ["**/*.js", "**/*.cjs"],
-    rules: { ["no-" + MARK]: "warn" },
+    plugins: {
+      lane3: {
+        rules: {
+          marker: {
+            create(context) {
+              return {
+                Program(node) {
+                  context.report({
+                    node: node,
+                    message: "lane3 canary marker " + MARK,
+                    loc: { start: { line: 1, column: 0 }, end: { line: 1, column: 1 } },
+                  });
+                },
+              };
+            },
+          },
+        },
+      },
+    },
+    rules: { "lane3/marker": "error" },
   },
 ];
