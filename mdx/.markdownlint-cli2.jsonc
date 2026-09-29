@@ -1,0 +1,4 @@
+{
+  "config": { "default": true },
+  "customRules": ["./l3_md_rule.cjs"]
+}

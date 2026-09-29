@@ -1,0 +1,12 @@
+language: en-US
+reviews:
+  profile: chill
+  tools:
+    prismaLint:
+      enabled: true
+    luacheck:
+      enabled: true
+    markdownlint:
+      enabled: true
+    emberTemplateLint:
+      enabled: false

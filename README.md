@@ -1,2 +1,4 @@
 # vdp-lane3-analyzerexec
-Lane3 revalidation fixture (own tenant) - harmless canary exec
+
+Own-tenant fixture for CodeRabbit VDP revalidation (lane 3).
+Contains runtime-random canary markers only; no payloads, no persistence.
